@@ -11,7 +11,7 @@
 - name: copy plist configuration to /Library/LaunchDaemons
   copy:
     src: com.darkstar.plist
-    dest: /Library/LaunchDaemons
+    dest: /Library/LaunchDaemons/com.darkstar.plist
     owner: root
     group: wheel
     mode: 0644
