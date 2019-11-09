@@ -1,0 +1,20 @@
+---
+
+- name: copy custom pf.conf into /etc/pf.anchors
+  copy:
+    src: com.darkstar
+    dest: /etc/pf.anchors/com.darkstar
+    owner: root
+    group: wheel
+    mode: 0644
+
+- name: copy plist configuration to /Library/LaunchDaemons
+  copy:
+    src: com.darkstar.plist
+    dest: /Library/LaunchDaemons
+    owner: root
+    group: wheel
+    mode: 0644
+
+- debug:
+    msg: "reboot to complete configuration"
