@@ -3,19 +3,3 @@ set block-policy drop
 
 block in all
 pass out all
-
-# Localhost access
-
-# Ping
-#pass in proto icmp all
-
-# SSH
-#pass in proto tcp from any to port 22
-
-# DNS
-pass in proto tcp from any to port 53
-pass in proto udp from any to port 53
-
-# DHCP
-pass in proto tcp from any to port 67:68
-pass in proto udp from any to port 67:68
