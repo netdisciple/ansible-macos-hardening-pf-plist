@@ -3,3 +3,5 @@ set block-policy drop
 
 block in all
 pass out all
+
+pass in proto udp from any to any port 67:68 keep state
